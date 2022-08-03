@@ -10,6 +10,7 @@ img{
     height: 100vh;
 }
 .h2, .para{
+    margin-left: 55px;
     justify-content: center;
     text-align: center;
     color:rgba(25, 18, 87, 0.911);
