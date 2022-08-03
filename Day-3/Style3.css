@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+img{
+    height: 100vh;
+}
+.header{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+   display: block;
+   top: 300px;
+   left:350px;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+   color: rgb(5, 5, 56);
+   font-size:40px;
+
+}
+p{
+    justify-content: center;
+    text-align: center;
+    color: rgb(11, 11, 80);
+    font-size:large;
+
+
+}
+.btn{
+    border:2px solid rgb(11, 11, 80);
+    background: transparent;
+    border-radius: 6px;
+    margin:4px 2px;
+    color:rgba(25,18.87,0.911);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding:12px 20px;
+    position: absolute;
+    left:300px;
+
+    
+}
+.btn:hover{
+    background-color: rgba(25,18,87,0.911);
+    color: white;
+}
+
+.mid{
+    margin-top: -4px;
+    background-color: rgb(137, 164, 177);
+    
+}
+.p1{
+   padding-top: 20px ;
+   padding-left: 20px ;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   color: white;
+} 
+.p2{
+    padding-top: 5px ;
+    padding-left: 20px ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    padding-top: 3px ;
+    display:flex;
+}
+.a{
+    background-color: rgb(137, 164, 177);
+}
+p3{
+    padding-top: 5px ;
+    padding-left: 20px ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+p5{
+    padding-top: 5px ;
+    padding-left: 20px ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+p4{
+    padding-top: 5px ;
+    padding-left: 20px ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+
+}
+.a2{
+    
+    background-color: rgb(137, 164, 177);
+}
