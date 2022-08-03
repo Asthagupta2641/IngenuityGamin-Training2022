@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top:25px;
+
+}
+.Header{
+    background-color: gainsboro;
+    height: 150px;
+    
+}
+.h1{
+    text-align: center;
+    text: size adjust 1px; 
+    padding-top: 50px;
+}
+.p{
+    text-align: center;
+    margin: 20px;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
+.p1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid;
+    font-size:  15px;
+    padding-bottom: 20px;
+    
+}
+.footer{
+    background-color: gainsboro;
+}
+.h{
+    text-align: center;
+    text: size adjust 1px; 
+    padding-top: 50px;
+
+
+}
+.descrip{
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    
+
+}
+.p2{
+    margin-left: 20%;
+    margin-right: 20%;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+}
+.h5{
+    
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 2%;
+}
