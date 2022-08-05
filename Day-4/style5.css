@@ -13,7 +13,7 @@
 
 nav{
     
-    background-color: grey;
+    background-color: rgb(10, 2, 2);
     height: 10vh;
 }
 nav ul{
@@ -57,11 +57,12 @@ a:hover{
     left:100px;
     }
 .h2{
-    margin-top: 50px;
+    margin-top: 200px;
     text-align: center;
 
 }
 .imgContainer{
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     
