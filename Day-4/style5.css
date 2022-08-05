@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 .container{
     max-width: 1200px;
-    /* border: 2px; */
     margin: auto;
+    
 }
 
 
@@ -44,7 +50,7 @@ a:hover{
     margin-left: 10px;
 }
 .content{
-    color: rgba(255, 255, 255, 0.938);
+    color: rgba(14, 4, 4, 0.938);
     position: absolute;
     display: block;
     top: 80px;
@@ -179,7 +185,7 @@ aside > .box{
 
 }
 .img6{
-    width:350px;
+    width:250px;
     height: 250px;
 
 }
@@ -193,7 +199,7 @@ aside > .box{
 }
 .section-1
 {
-    height: 200px;
+    height: 300px;
     margin-top: 10px;
     width: 100%;
     display: flex;
@@ -312,7 +318,7 @@ aside > .box{
 .section-2
 {
 border-bottom: 1px solid rgb(44, 44, 44);
-height: 50px;
+height: 60px;
 margin-top: 10px;
 }
 .section-2 p
