@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../Assets/sunset.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.highway{
+    height: 200px;
+    width: 300%;
+    background-image:url(../Assets/Road.jpg) ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway {
+    100%{
+        transform: translateX(-1500px);
+    }
+    
+}
+.city{
+    width: 300%;
+    height: 300px;
+    background-image:url(../Assets/bg9-removebg-preview.png); 
+    position: absolute;
+    bottom: 199px;
+    left: 0;
+    right: 0;
+    /* z-index: 2; */
+    animation: city 20s linear infinite;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1500px);
+    }
+    
+}
+.car{
+    z-index: 2;
+    width: 400px;
+    /* height: 250px; */
+    /* border: 2px solid green; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 118px;
+
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+ .wheels{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 185px;
+    /* animation: wheel 1s linear infinite; */
+    z-index: 2;
+}
+.wheels img{
+    width: 54px;
+    height: 54px;
+    z-index: 2;
+    animation: wheel 1s linear infinite;
+}
+.front-wheel{
+    position: absolute;
+    left: 58px;
+   
+
+}
+.back-wheel{
+    position: absolute;
+    left: -135px;
+    
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}  
+
+@keyframes car {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+    
+}
