@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+
+}
+.box{
+width: 250px;
+background-color: palevioletred;
+transition: transition 1s;
+
+}
+.box:hover{
+     /* transform:scale(2);  increase or decrease the size */
+     transform: skew(30deg, -45 deg);
+}

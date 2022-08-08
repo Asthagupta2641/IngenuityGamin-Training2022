@@ -254,7 +254,7 @@ aside > .box{
 }
 .section-1
 {
-    height: 300px;
+    height: 320px;
     margin-top: 10px;
     width: 100%;
     display: flex;
@@ -298,14 +298,14 @@ aside > .box{
 .category ul li
 {   
     height: 2px;
-    padding: 1 px;
+    padding: 8px;
     margin-bottom: 10px;
     margin-right: 20px;
 }
 .category ul li a
 {   
     width:5%;
-    padding: 10%px;
+    padding: 20%px;
     text-decoration: none;
     text-transform:capitalize;
     color: gray;
@@ -326,7 +326,7 @@ aside > .box{
 .quicklinks ul li
 {    
     height: 1px;
-    padding: 1px;
+    padding: 8px;
     margin-bottom: 5px;
 }
 .quicklinks ul li a
