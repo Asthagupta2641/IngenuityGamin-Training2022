@@ -14,6 +14,16 @@
     position: relative;
     overflow: hidden;
 }
+.I{
+    animation: I 20s linear infinite;
+}
+@keyframes I{
+    100% {
+   
+    transform: translateX(500px);
+}
+
+}
 
 .highway{
     height: 200px;
