@@ -17,19 +17,27 @@
    
      var fillName = prompt("Enter your fullname");
      document.write(`<h1>${fillName} </h1>`);
-    var a=10;
-    var b=20;
-    var c=a+b;
     
-    document.write(`<br><h1>Addition: ${c}`);
 
-    var d=a-b;
-    document.write(`<br><h1>Subtraction: ${d}`);
+    var number1 = prompt("Enter number1");
+    var number2=prompt("Enter number2");
 
-    var e=a * b;
-    document.write(`<br><h1>Multiplication:${e}`);
+    // Addition
+    var addi= Number(number1)+Number(number2);
+    document.write(`<h3>Addition of ${number1} and ${number2} is : ${addi} </h3>`);
 
-    var f=a / b;
-    document.write(`<br><h1>Division:${f}`);
+    //subtraction
+    var sub= number1-number2;
+    document.write(`<h3>Subtraction of ${number1} and ${number2} is : ${sub} </h3>`);
 
-//console.log("hi");
+
+    //multiplication 
+    var multi= number1 * number2;
+    document.write(`<h3>Multiplication of ${number1} and ${number2} is : ${multi} </h3>`);
+
+
+    //divide
+    var divide = number1 / number2;
+    document.write(`<h3>Division of ${number1} and ${number2} is : ${divide} </h3>`);
+
+    //console.log("hi");
