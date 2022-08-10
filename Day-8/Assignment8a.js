@@ -2,7 +2,7 @@ document.body.style.color="black";
 document.body.style.marginTop="300px";
 document.body.style.fontFamily="'Dancing Script', cursive";
 document.body.style.fontSize="larger";
-document.body.style.textShadow="2px white"
+document.body.style.textShadow="4px white"
 
 
 document.body.style.textAlign="center";
