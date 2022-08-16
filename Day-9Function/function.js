@@ -102,8 +102,95 @@ console.log(a());
 function sayHello(a,b){
 console.log("Result = " + a + b);
 }
-Add(5,10);
+add(5,10);
 var Add = function(){
     return a+b;
     
 };
+
+
+//js scope:visibility of code
+// there are three types of scope
+// Block scope
+//function
+//global
+
+// 1.Block Scope:ESS there is np block,its available in ES6(let and const)
+
+// var c=30; //global scope
+// function Scope1() {
+//  var a=10;
+//  console.log("Inside scope1");
+//  console.log(a);
+//  console.log(c);
+
+
+//  function Scope2(){
+//     var a=20;
+//  console.log("Inside scope2");//block scope
+//  console.log(a);
+//  console.log(c);
+// }
+// Scope2();
+// }
+// Scope1();
+
+// console.log("outside scope1");
+// console.log(a);
+// console.log(c);
+
+
+
+// function checkvar(){
+//     //a variable that is create inside function without var is treated as Global variable and have global scope
+//     data=20;  
+//     console.log(data); 
+// }
+// checkvar();
+// console.log(data);
+
+
+// function add(a,b) {
+//     return a+b;
+
+// }
+// var sum =add;//reference of add() is also stored in sum 
+// //so we call the function using add() as well sum()
+// console.log(sum(5,10));
+// console.log(add(5,10));
+
+
+//Passing function to a function
+function avg(a,b,sum)
+{
+    return sum(a, b)/2;
+
+}
+function add(a,b){
+    return a+b;
+
+}
+var sum =add;
+var result=avg(5,10,sum);
+console.log("FiNAL result="+result);
+
+
+//function to create objects
+
+function Person(){
+    //properties
+    // Person(this.name,this.age)
+    this.name="Astha";
+    this.age="21";
+
+    //methods
+    this.details=function(){
+        return "Name= " + this.name + "Age: " + this.age;
+    };
+}
+var obj1=new Person();
+
+
+// console.log(obj1.name);
+// obj1.name="Anshika";
+console.log(obj1.details());
