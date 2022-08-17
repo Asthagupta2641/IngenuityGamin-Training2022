@@ -23,4 +23,3 @@ sqr(5);
 
 var myArr=[1,3,5,7];
 myArr.forEach((a)=>console.log(a*10));
-dcx
