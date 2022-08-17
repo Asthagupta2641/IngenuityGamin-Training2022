@@ -41,17 +41,19 @@ var person1 = {
    document.write(`<h4>2.Write a Program to create an array having cube root of every element of another array</h4>`)
    
    var myArr=[8,27,64,125,216];
-   var newArr=myArr.map((i)=>Math.cbrt(i));
-   document.write([newArr]);
+   var newArr=[myArr.map((i)=>Math.cbrt(i))];
+   document.write("["+newArr+"]");
 
    document.write(`<h4>3.Write a Program to call a function in an interval of 3 sec for 5 times</h4>`)
 
-
-        setTimeout(callback,3000);
         function callback(){
-            document.write("Hi");
+            document.write("Hi <br>");
         }
-        document.write(setInterval(callback,15000)+"<br>");
+        var myint= setInterval(callback,3000);
+        function clear(){
+            clearInterval(myint);
+        }
+        setTimeout(clear,15000);
 //    document.write(`<h4>4.Write a Program to iterate an Array of Objects using map function</h4>`)
    var people=[
     {name:"Ashish" ,age: 23},
