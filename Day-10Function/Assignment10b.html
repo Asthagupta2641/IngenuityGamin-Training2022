@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment10b</title>
+</head>
+<body>
+    <script>
+        //document.write(`<h4>3.Write a Program to call a function in an interval of 3 sec for 5 times</h4>`)
+        function callback(){
+            document.write("Hi <br>");
+        }
+        var myint= setInterval(callback,3000);
+        function clear(){
+            clearInterval(myint);
+        }
+        setTimeout(clear,15000);
+
+    </script>
+</body>
+</html>
