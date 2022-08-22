@@ -1,4 +1,4 @@
-/* ------------Initial Phase CSS--------------- */
+/* / ------------Initial Phase CSS--------------- / */
 
 * {
     margin: 0;
@@ -39,52 +39,56 @@
     color: white;
     background-color: skyblue;
   }
+  
+  /* / ----------------New List Container----------------- / */
+
 .todo-container{
     display: flex;
     justify-content: center;
     align-items: center;
-     /* background-color: azure;  */
 }
+
 .todo-list{
     list-style: none;
-    min-width: 25%;
-    /* background-color: azure;  */
+    min-height: 25%;
 }
+
 .todo{
-    background-color: aliceblue;
+    background-color: white;
     font-size: 24px;
     margin: 8px;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
 }
-.todo item{
+
+.todo li {
     flex: 1;
-    margin: 0 10px;
 }
+
 .cmpltbtn,.deltbtn{
-    font-size: 16px;
     color: white;
     background-color: teal;
     border: none;
     padding: 16px;
     outline: none;
-
-
+    font-size: 16px;
 }
+
 .deltbtn{
     background-color: deeppink;
 }
+
 .todo_item{
     margin: 0 10px;
-
-
 }
+
 .fa-trash,.fa-check{
     pointer-events: none;
 }
+
 .check{
-    opacity: .5;
+    opacity: 0.5;
     text-decoration: line-through;
 }
