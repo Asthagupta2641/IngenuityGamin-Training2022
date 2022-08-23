@@ -9,6 +9,51 @@ function stopLoader(){
 
 }
 
+setTimeout(openpopup, 7000);
+     function openpopup()
+   {
+    
+    var url="../Day-14Assignment/Foam.html";
+    var Windowsize="height=500 , width=500";
+    var newi=window.open(url,"_blank",Windowsize);
+    console.log("hi");
+    newi.moveTo(500,200);
+    //Interval(pop);
+    
+   }
+
+
+   function popup()
+   {
+    var url="../Day-14Assignment/Foam.html";
+    var Windowsize="height=500 , width=500";
+    var newi=window.open(url,"_blank",Windowsize);
+    console.log("hi");
+    newi.moveTo(500,200);
+   }
+
+
+// window.onload = function () {
+//     var pop=setInterval(() => {
+//         openform();
+//         clearInterval(pop);
+//     }, 10000);
+// };
+
+// function openform(){
+//     var url="../Day-14Assignment/Assign.html";
+//     var windowSize="height:400,width:400";
+//     // var window = window.open(url,"_blank",windowSize);
+//     window.open(url,"About page ",windowSize);
+// }
+
+// function OpenWindow(){
+//     var url="../Day-14Assignment/Assign.html";
+//     var windowSize="height:400,width:400";
+//     // var window = window.open(url,"_blank",windowSize);
+//     window.open(url,"About page ",windowSize);
+// }
+
 var toInput=document.querySelector(".todo-input");
 var btn = document.querySelector("button");
 var todoList=document.querySelector(".todo-list");
