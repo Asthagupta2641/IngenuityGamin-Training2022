@@ -1,3 +1,14 @@
+window.onload=function(){
+    setInterval(()=>{
+        stopLoader();
+    },3000);
+}
+function stopLoader(){
+    document.querySelector('.container').style.display="none";
+    document.getElementById("todo-container").style.display="block";
+
+}
+
 var toInput=document.querySelector(".todo-input");
 var btn = document.querySelector("button");
 var todoList=document.querySelector(".todo-list");
