@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: beige;
+    background-color: black;
+}
+#canvas{
+  background-color: azure;
+  border-radius: 20px;
+
+}

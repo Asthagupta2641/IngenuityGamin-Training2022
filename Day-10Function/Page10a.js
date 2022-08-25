@@ -44,10 +44,22 @@ var person1 = {
    var newArr=[myArr.map((i)=>Math.cbrt(i))];
    document.write("["+newArr+"]");
 
-   document.write(`<h4>3.Write a Program to call a function in an interval of 3 sec for 5 times</h4>`)
+//    document.write(`<h4>3.Write a Program to call a function in an interval of 3 sec for 5 times</h4>`)
+
+
+
+
+
+
+
+
+
+
+
+
 
        
-//    document.write(`<h4>4.Write a Program to iterate an Array of Objects using map function</h4>`)
+   document.write(`<h4>4.Write a Program to iterate an Array of Objects using map function</h4>`)
    var people=[
     {name:"Ashish" ,age: 23},
     {name:"Ajay" ,age:21},
