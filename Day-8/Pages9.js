@@ -7,9 +7,11 @@ document.body.style.textShadow="10px 10px 10px grey";
 
 document.write(`<h1> Assignment-3</h1>`)
 // remove extra white space from the string
-var x = prompt("Enter a String with whitespaces");
-var sentence = x.replace(/\s+/g,' ').trim();
-document.write(`string without extra whitespaces: ${sentence} <br>`);
+// program to trim a string
+
+
+
+
 
 
 //Write a code to Copy an array into another using forEach()
