@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+       Assignment-8
+    </title>
+</head>
+ 
+<body>
+    <h1 style="color: rgb(128, 0, 0)">
+        Removing White spaces
+    </h1>
+     
+    <p>
+        <!-- Original string is: khushi is a trainee at Ingenuity Gaming -->
+        Original string is : <pre id="str"></pre>
+    </p>
+     
+    <p>
+        New String is:
+        <span class="output"></span>
+    </p>
+     
+    <button onclick="removeSpaces()">
+        Remove Spaces
+    </button>
+     
+    <script type="text/javascript">
+        var str=prompt("Enter a string with whitespaces : ");
+        document.getElementById('str').innerHTML=str;
+        function removeSpaces() {
+         
+         
+            removedSpacesText =
+                str.split(" ").join("");
+         
+            document.querySelector('.output').textContent
+                    = removedSpacesText;
+        }
+    </script>
+</body>
+ 
+</html>
