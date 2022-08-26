@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="../Day-15Assignment/covid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+  </head>
+  <body>
+    <div class="container">
+      <header>Fetching Data using Covid API</header>
+      <section>
+        <h3>Today's covid cases</h3>
+        <h4>
+          <span id="co">Country Name: </span>
+          <form action="">
+            <select name="" id="select">
+              <option value="Country Name" id="cn">Country Name</option>
+            </select>
+          </form>
+        </h4>
+        <h4><span id="co">Date: </span><span id="p2"></span></h4>
+        <h4><span id="co">Total Cases: </span><span id="p3"></span></h4>
+        <h4><span id="co">Total Deaths: </span><span id="p4"></span></h4>
+        <h4><span id="co">New Cases: </span><span id="p5"></span></h4>
+        <h4><span id="co">New Deaths: </span><span id="p6"></span></h4>
+      </section>
+    </div>
+
+    <script src="../Day-15Assignment/covid.js"></script>
+  </body>
+</html>
