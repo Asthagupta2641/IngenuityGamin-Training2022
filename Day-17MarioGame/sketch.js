@@ -287,6 +287,8 @@ var mario_collided;
 
 var brickGroup, brickImage;
 
+var pipeGroup, pipeImage;
+
 var coinImage, coinsGroup;
 var coinScore = 0;
 
@@ -309,6 +311,8 @@ function preload() {
   );
 
   brickImage = loadImage("images/brick.png");
+
+  pipeImage = loadImage("images/marpiper.png");
 
   coinImage = loadAnimation(
     "images/con1.png",
@@ -340,7 +344,7 @@ function preload() {
   mario_collided = loadAnimation("images/dead.png");
 
   dieSound = loadSound("sounds/dieSound.mp3");
-
+  mariosound =loadSound("sounds/mariosound.mp3");
   restartImg = loadImage("images/restart.png");
 }
 
@@ -356,6 +360,8 @@ function setup() {
 
   ground = createSprite(200, 580, 400, 10);
 
+  pipeGroup = new Group();
+
   brickGroup = new Group();
 
   coinsGroup = new Group();
@@ -367,16 +373,20 @@ function setup() {
   restart = createSprite(500, 300);
   restart.addImage(restartImg);
   restart.visible = false;
+  
 }
 
 function draw() {
   drawSprites();
-
+  
   if (gameState == "PLAY") {
+    
+    
     // Make background Move
     bg.velocityX = -5;
     if (bg.x < 100) {
       bg.x = bg.width / 4;
+      mariosound.play();
     }
 
     // Make Mario Jump-Up
@@ -393,6 +403,20 @@ function draw() {
     // Ground for Mario
     mario.collide(ground);
     ground.visible = false;
+    
+    generatePipes();
+
+    // Stay on Bricks
+    for (var i = 0; i < pipeGroup.length; i++) {
+      var temp = pipeGroup.get(i);
+      if (temp.isTouching(mario)) {
+        mario.collide(temp);
+      }
+    }
+
+    // // Mario Issue
+    // if (mario.x < 200) mario.x = 200;
+    // if (mario.y < 50) mario.y = 50;
 
     generateBricks();
 
@@ -457,6 +481,20 @@ function draw() {
   textSize(20);
   fill("brown");
   text("Coins Collected: " + coinScore, 500, 50);
+}
+function generatePipes() {
+  if (frameCount % 70 === 0) {
+    var pipe = createSprite(1200, 520, 40, 10);
+    // 
+    
+    pipe.addImage(pipeImage);
+    pipe.scale = 0.5;
+    pipe.velocityX = -5;
+
+    pipe.lifetime = 250;
+
+    pipeGroup.add(pipe);
+  }
 }
 
 function generateBricks() {
