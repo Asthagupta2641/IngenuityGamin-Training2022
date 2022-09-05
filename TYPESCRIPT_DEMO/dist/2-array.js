@@ -1,0 +1,17 @@
+"use strict";
+let arr1 = [1, 2, 3, 4, 5];
+arr1.push(1);
+console.log(arr1);
+let arr2 = [];
+arr2[0] = "Rahul";
+arr2[1] = "Astha";
+arr2[2] = "Ballu";
+arr2[3] = "Anshika";
+console.log(arr2);
+arr2.forEach((i) => console.log(i));
+let arr3 = [1, 2, 3, 4, 5, "abs", "gupta", "jain", "rao"];
+arr3.push("sdf");
+arr3.push(33);
+console.log(arr3);
+let arr4 = [1, 2, 3, 4, 5];
+let assignmentArray = [1, 2, 3, 4, 5, 6];
