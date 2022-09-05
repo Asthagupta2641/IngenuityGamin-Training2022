@@ -1,10 +1,23 @@
 "use strict";
-function addFunc(x, ...y) {
+function addFunc(...y) {
     let sum = 0;
-    for (let i = 0; i < y.length; i++) {
+    let enterValue = prompt("How many numbers will you enter?");
+    let p = parseInt(enterValue);
+    for (let i = 1; i <= p; i++) {
+        let enterValueOfY = prompt(`Enter the values ${p} times`);
+        y.push(parseInt(enterValueOfY));
         sum = sum + y[i];
     }
-    return x + sum;
+    console.log(y);
+    return sum;
 }
-let func = addFunc(2, 3, 4, 5, 6, 7, 8, 9);
-document.write(`<h3> sum of variables using rest operator ${func} </h3>`);
+let func = addFunc(0);
+document.write(`<h3> Sum of variables using rest operator : ${func} </h3>`);
+document.body.style.background = "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,45,1) 100%)";
+document.body.style.minHeight = "100vh";
+document.body.style.fontFamily = "cursive";
+document.body.style.display = "flex";
+document.body.style.flexDirection = "column";
+document.body.style.justifyContent = "center";
+document.body.style.textAlign = "center";
+document.body.style.fontSize = "20px";
